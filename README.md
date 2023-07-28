@@ -1,9 +1,11 @@
 # 이것이 자바다 (책을 학습하며 예제 정리)  
 ## 1. History
-#### *[2023.07.28] p15. Chapter 01 - Hello.java 예재 커밋*
+### [2023.07.28]
+*p15. Chapter 01 - Hello.java 예재 커밋*  
+*p30. Chapter 01 - Calculator.java 예재*
 ###
 ## 2. 실습내용 정리
-### p15. Chapter 01 - Hello.java 예재 커밋
+### p15. Chapter 01 - Hello.java 예재
 ```java
 package ch01.sec06;
 
@@ -27,4 +29,23 @@ $ javac -d bin src/ch01/sec06/Hello.java
 $ java -cp bin ch01.sec06.Hello
 
 Hello, Java
+```
+
+### p30. Chapter 01 - Calculator.java 예재
+```java
+package ch01.sec12;
+
+public class Calculator {
+    public static void main(String[] args) {
+        int x = 1;                  //변수 x 선언, 1 저장
+        int y = 2;                  //변수 y 선언, 2 저장
+        int result = x + y;         //변수 result 선언, x + y 수행 결과 저장
+        System.out.println(result); //변수 result 의 값을 화면에 출력
+    }
+}
+```
+```shell
+$ java -cp bin ch01.sec12.Calculator 
+
+3
 ```
