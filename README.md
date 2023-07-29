@@ -11,6 +11,7 @@
 *p41. Chapter 02 - IntegerLiteralExample.java 예재*  
 *p42. Chapter 02 - ByteExample.java 예재*  
 *p43. Chapter 02 - LongExample.java 예재*  
+*p44. Chapter 02 - CharExample.java 예재*  
 ###
 ## 2. 실습내용 정리
 ### p15. Chapter 01 - Hello.java 예재
@@ -277,4 +278,31 @@ public class LongExample {
 ```shell
 #실행결과
 java: integer number too large
+```
+
+### Chapter 02 - CharExample.java 예재
+```java
+package ch02.sec03;
+
+public class CharExample {
+    public static void main(String[] args) {
+        char c1 = 'A';
+        char c2 = 65;
+
+        char c3 = '가';
+        char c4 = 44032;
+
+        System.out.println(c1);
+        System.out.println(c2);
+        System.out.println(c3);
+        System.out.println(c4);
+    }
+}
+```
+```shell
+#실행결과
+A
+A
+가
+가
 ```
