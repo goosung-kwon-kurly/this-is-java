@@ -2,7 +2,9 @@
 ## 1. History
 ### [2023.07.28]
 *p15. Chapter 01 - Hello.java 예재 커밋*  
-*p30. Chapter 01 - Calculator.java 예재*
+*p30. Chapter 01 - Calculator.java 예재*  
+### [2023.07.29]
+*p37. Chapter 02 - VariableInitializationExample.java 예재*  
 ###
 ## 2. 실습내용 정리
 ### p15. Chapter 01 - Hello.java 예재
@@ -48,4 +50,25 @@ public class Calculator {
 $ java -cp bin ch01.sec12.Calculator 
 
 3
+```
+### Chapter 02 - VariableInitializationExample.java 예재
+```java
+package ch02.sec01;
+
+public class VariableInitializationExample {
+    public static void main(String[] args) {
+        int value;
+
+        // 연산 결과를 변수 result 에 할당하지만 value 가 초기화되지 않음
+        int result = value + 10;
+
+        System.out.println(result);
+    }
+}
+```
+```shell
+temp/src/ch01/sec01/VariableInitializationExample.java:7:22
+
+#실행결과
+java: variable value might not have been initialized
 ```
