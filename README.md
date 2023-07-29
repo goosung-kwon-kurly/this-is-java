@@ -6,6 +6,7 @@
 ### [2023.07.29]
 *p37. Chapter 02 - VariableInitializationExample.java 예재*  
 *p37. Chapter 02 - VariableUseExample.java 예재*  
+*p38. Chapter 02 - VariableExchangeExample.java 예재*  
 ###
 ## 2. 실습내용 정리
 ### p15. Chapter 01 - Hello.java 예재
@@ -92,4 +93,26 @@ public class VariableUseExample {
 #실행결과
 3시간 5분
 총 185분
+```
+### Chapter 02 - VariableExchangeExample.java 예재
+```java
+package ch02.sec01;
+
+public class VariableExchangeExample {
+    public static void main(String[] args) {
+        int x = 3;
+        int y = 5;
+        System.out.println("x:" + x + ", y:" + y);
+
+        int temp = x;
+        x = y;
+        y = temp;
+        System.out.println("x:" + x + ", y:" + y);
+    }
+}
+```
+```shell
+#실행결과
+x:3, y:5
+x:5, y:3
 ```
