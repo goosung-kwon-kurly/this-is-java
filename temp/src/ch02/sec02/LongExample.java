@@ -4,7 +4,7 @@ public class LongExample {
     public static void main(String[] args) {
         long var1 = 10;
         long var2 = 20L;
-        long var3 = 1000000000000;  //컴파일러는 int로 간주하기 때문에 에러 발생
+        long var3 = 1000000000000L;  // 컴파일 에러 수정
         long var4 = 1000000000000L;
 
         System.out.println("var1: " + var1);
