@@ -1,22 +1,22 @@
 # 이것이 자바다 (책을 학습하며 예제 정리)  
 ## 1. History
 ### [2023.07.28]
-*p15. Chapter 01 - Hello.java 예재 커밋*  
-*p30. Chapter 01 - Calculator.java 예재*  
+*p15. [Chapter 01 - Hello.java 예재](#p15-chapter-01---hellojava-예재)*  
+*p30. [Chapter 01 - Calculator.java 예재](#p30-chapter-01---calculatorjava-예재)*  
 ### [2023.07.29]
-*p37. Chapter 02 - VariableInitializationExample.java 예재*  
-*p37. Chapter 02 - VariableUseExample.java 예재*  
-*p38. Chapter 02 - VariableExchangeExample.java 예재*  
-*p39. Chapter 02 - 2.2 정수 타입*  
-*p41. Chapter 02 - IntegerLiteralExample.java 예재*  
-*p42. Chapter 02 - ByteExample.java 예재*  
-*p43. Chapter 02 - LongExample.java 예재*  
-*p44. Chapter 02 - CharExample.java 예재*  
-*p45. Chapter 02 - 2.4 실수 타입*  
-*p47. Chapter 02 - FloatDoubleExample.java 예재*  
-*p48. Chapter 02 - BooleanExample.java 예재*  
-*p50. Chapter 02 - StringExample.java 예재*  
-*p51. Chapter 02 - TextBlockExample.java 예재*  
+*p37. [Chapter 02 - VariableInitializationExample.java 예재](#chapter-02---variableinitializationexamplejava-예재)*  
+*p37. [Chapter 02 - VariableUseExample.java 예재](#chapter-02---variableuseexamplejava-예재)*  
+*p38. [Chapter 02 - VariableExchangeExample.java 예재](#chapter-02---variableexchangeexamplejava-예재)*  
+*p39. [Chapter 02 - 2.2 정수 타입](#chapter-02---22-정수-타입)*  
+*p41. [Chapter 02 - IntegerLiteralExample.java 예재](#chapter-02---integerliteralexamplejava-예재)*  
+*p42. [Chapter 02 - ByteExample.java 예재](#chapter-02---byteexamplejava-예재)*  
+*p43. [Chapter 02 - LongExample.java 예재](#chapter-02---longexamplejava-예재)*  
+*p44. [Chapter 02 - CharExample.java 예재](#chapter-02---charexamplejava-예재)*  
+*p45. [Chapter 02 - 2.4 실수 타입](#chapter-02---24-실수-타입)*  
+*p47. [Chapter 02 - FloatDoubleExample.java 예재](#chapter-02---floatdoubleexamplejava-예재)*  
+*p48. [Chapter 02 - BooleanExample.java 예재](#chapter-02---booleanexamplejava-예재)*  
+*p50. [Chapter 02 - StringExample.java 예재](#chapter-02---stringexamplejava-예재)*  
+*p51. [Chapter 02 - TextBlockExample.java 예재](#chapter-02---textblockexamplejava-예재)*  
 ###
 ## 2. 실습내용 정리
 ### p15. Chapter 01 - Hello.java 예재
