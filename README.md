@@ -16,6 +16,7 @@
 *p47. Chapter 02 - FloatDoubleExample.java 예재*  
 *p48. Chapter 02 - BooleanExample.java 예재*  
 *p50. Chapter 02 - StringExample.java 예재*  
+*p51. Chapter 02 - TextBlockExample.java 예재*  
 ###
 ## 2. 실습내용 정리
 ### p15. Chapter 01 - Hello.java 예재
@@ -448,4 +449,53 @@ public class StringExample {
 나는
 자바를
 배웁니다.
+```
+
+### Chapter 02 - TextBlockExample.java 예재
+```java
+package ch02.sec06;
+
+public class TextBlockExample {
+    public static void main(String[] args) {
+        String str1 = "" +
+                "{\n" +
+                "\t\"id\":\"winter\",\n" +
+                "\t\"name\":\"눈송이\"\n" +
+                "}";
+
+        String str2 = """
+                {
+                    "id":"winter",
+                    "name":"눈송이"
+                }
+                """;
+
+        System.out.println(str1);
+        System.out.println("-----------------------------");
+        System.out.println(str2);
+        System.out.println("-----------------------------");
+        String str = """
+                나는 자바를 \
+                학습합니다.
+                나는 자바 고수가 될 겁니다.
+                """;
+        System.out.println(str);
+    }
+}
+```
+```shell
+#실행결과
+{
+	"id":"winter",
+	"name":"눈송이"
+}
+-----------------------------
+{
+    "id":"winter",
+    "name":"눈송이"
+}
+
+-----------------------------
+나는 자바를 학습합니다.
+나는 자바 고수가 될 겁니다.
 ```
