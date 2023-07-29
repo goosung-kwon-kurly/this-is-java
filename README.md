@@ -15,6 +15,7 @@
 *p45. Chapter 02 - 2.4 실수 타입*  
 *p47. Chapter 02 - FloatDoubleExample.java 예재*  
 *p48. Chapter 02 - BooleanExample.java 예재*  
+*p50. Chapter 02 - StringExample.java 예재*  
 ###
 ## 2. 실습내용 정리
 ### p15. Chapter 01 - Hello.java 예재
@@ -413,4 +414,38 @@ public class BooleanExample {
 중지합니다.
 result1 false
 result2 true
+```
+
+### Chapter 02 - StringExample.java 예재
+```java
+package ch02.sec06;
+
+public class StringExample {
+    public static void main(String[] args) {
+        String name = "홍길동";
+        String job = "프로그래머";
+        System.out.println(name);
+        System.out.println(job);
+
+        String str = "나는 \"자바\"를 배웁니다.";
+        System.out.println(str);
+
+        str = "번호\t이름\t직업";
+        System.out.println(str);
+
+        System.out.print("나는\n");
+        System.out.print("자바를\n");
+        System.out.print("배웁니다.\n");
+    }
+}
+```
+```shell
+#실행결과
+홍길동
+프로그래머
+나는 "자바"를 배웁니다.
+번호	이름	직업
+나는
+자바를
+배웁니다.
 ```
