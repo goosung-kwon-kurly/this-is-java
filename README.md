@@ -14,6 +14,7 @@
 *p44. Chapter 02 - CharExample.java 예재*  
 *p45. Chapter 02 - 2.4 실수 타입*  
 *p47. Chapter 02 - FloatDoubleExample.java 예재*  
+*p48. Chapter 02 - BooleanExample.java 예재*  
 ###
 ## 2. 실습내용 정리
 ### p15. Chapter 01 - Hello.java 예재
@@ -384,4 +385,32 @@ var2: 0.12345678901234568
 var3: 3000000.0
 var4: 3000000.0
 var5: 0.002
+```
+
+### Chapter 02 - BooleanExample.java 예재
+```java
+package ch02.sec05;
+
+public class BooleanExample {
+    public static void main(String[] args) {
+        boolean stop = true;
+        if(stop) {
+            System.out.println("중지합니다.");
+        } else {
+            System.out.println("시작합니다.");
+        }
+
+        int x = 10;
+        boolean result1 = (x == 20);
+        boolean result2 = (x != 20);
+        System.out.println("result1 " + result1);
+        System.out.println("result2 " + result2);
+    }
+}
+```
+```shell
+#실행결과
+중지합니다.
+result1 false
+result2 true
 ```
