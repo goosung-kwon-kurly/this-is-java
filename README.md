@@ -5,6 +5,7 @@
 *p30. Chapter 01 - Calculator.java 예재*  
 ### [2023.07.29]
 *p37. Chapter 02 - VariableInitializationExample.java 예재*  
+*p37. Chapter 02 - VariableUseExample.java 예재*  
 ###
 ## 2. 실습내용 정리
 ### p15. Chapter 01 - Hello.java 예재
@@ -71,4 +72,24 @@ temp/src/ch01/sec01/VariableInitializationExample.java:7:22
 
 #실행결과
 java: variable value might not have been initialized
+```
+#### Chapter 02 - VariableUseExample.java 예재
+```java
+package ch02.sec01;
+
+public class VariableUseExample {
+    public static void main(String[] args) {
+        int hour = 3;
+        int minute = 5;
+        System.out.println(hour + "시간 " + minute + "분");
+
+        int totalMinute = (hour*60) + minute;
+        System.out.println("총 " + totalMinute + "분");
+    }
+}
+```
+```shell
+#실행결과
+3시간 5분
+총 185분
 ```
