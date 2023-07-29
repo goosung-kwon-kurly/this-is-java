@@ -12,6 +12,7 @@
 *p42. Chapter 02 - ByteExample.java 예재*  
 *p43. Chapter 02 - LongExample.java 예재*  
 *p44. Chapter 02 - CharExample.java 예재*  
+*p45. Chapter 02 - 2.4 실수 타입*  
 ###
 ## 2. 실습내용 정리
 ### p15. Chapter 01 - Hello.java 예재
@@ -305,4 +306,50 @@ A
 A
 가
 가
+```
+### Chapter 02 - 2.4 실수 타입
+#### 실수 타입 2개
+<table>
+ <thead>
+  <tr>
+   <td>타입</td>
+   <td colspan="2">메모리 크기</td>
+   <td>저장되는 값의 허용 범위(양수 기준)</td>
+   <td>유효 소수 이하 자리</td>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>float</td>
+   <td>4byte</td>
+   <td>32bit</td>
+   <td>1.4 x 10<sup>-45</sup> ~ 3.4 x 10<sup>38</sup></td>
+   <td>7자리</td>
+  </tr>
+  <tr>
+   <td>double</td>
+   <td>8byte</td>
+   <td>64bit</td>
+   <td>4.9 x 10<sup>-324</sup> ~ 1.8 x 10<sup>308</sup></td>
+   <td>15자리</td>
+  </tr>
+ </tbody>
+</table>
+
+#### 10진수 리터럴
+```java
+double x = 0.25;
+double y = -3.14;
+```
+
+#### e 또는 E가 포함된 10의 거듭제곱 리터럴
+```java
+double x = 5e2;         // 500.0
+double y = 0.12E-2;     // 0.0012
+```
+
+#### 컴파일러는 실수 리터럴을 기본적으로 double 타입으로 해석하기 때문에 float 타입에 대입하고 싶다면 리터럴 뒤에 소문자 'f'나 대문자 'F'를 붙여 컴파일러가 float 타입임을 알 수 있도록 해야 한다.
+```java
+float var = 3.14f;
+float var = 3E6F;
 ```
