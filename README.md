@@ -13,6 +13,7 @@
 *p43. Chapter 02 - LongExample.java 예재*  
 *p44. Chapter 02 - CharExample.java 예재*  
 *p45. Chapter 02 - 2.4 실수 타입*  
+*p47. Chapter 02 - FloatDoubleExample.java 예재*  
 ###
 ## 2. 실습내용 정리
 ### p15. Chapter 01 - Hello.java 예재
@@ -352,4 +353,35 @@ double y = 0.12E-2;     // 0.0012
 ```java
 float var = 3.14f;
 float var = 3E6F;
+```
+
+### Chapter 02 - FloatDoubleExample.java 예재
+```java
+package ch02.sec04;
+
+public class FloatDoubleExample {
+    public static void main(String[] args) {
+        //정밀도 확인
+        float var1 = 0.1234567890123456789f;
+        double var2 = 0.1234567890123456789;
+        System.out.println("var1: " + var1);
+        System.out.println("var2: " + var2);
+
+        //10의 거듭제곱 리터럴
+        double var3 = 3e6;
+        float var4 = 3e6F;
+        double var5 = 2e-3;
+        System.out.println("var3: " + var3);
+        System.out.println("var4: " + var4);
+        System.out.println("var5: " + var5);
+    }
+}
+```
+```shell
+#실행결과
+var1: 0.12345679
+var2: 0.12345678901234568
+var3: 3000000.0
+var4: 3000000.0
+var5: 0.002
 ```
