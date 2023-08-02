@@ -17,6 +17,18 @@
 *p48. [Chapter 02 - BooleanExample.java 예재](#chapter-02---booleanexamplejava-예재)*  
 *p50. [Chapter 02 - StringExample.java 예재](#chapter-02---stringexamplejava-예재)*  
 *p51. [Chapter 02 - TextBlockExample.java 예재](#chapter-02---textblockexamplejava-예재)*  
+### [2023.07.29]
+*p53. [Chapter 02 - 2.7 자동 타입_변환](#chapter-02---27-자동-타입-변환)*  
+### [2023.08.02]
+*p54. [Chapter 02 - PromotionExample.java 예재](#chapter-02---promotionexamplejava-예재)*  
+*p58. [Chapter 02 - CastingExample.java 예재](#chapter-02---castingexamplejava-예재)*  
+*p62. [Chapter 02 - OperationPromotionExample.java 예재](#chapter-02---operationpromotionexamplejava-예재)*  
+*p64. [Chapter 02 - StringConcatExample.java 예재](#chapter-02---stringconcatexamplejava-예재)*  
+*p65. [Chapter 02 - PrimitiveAndStringConversionExample.java 예재](#chapter-02---primitiveandstringconversionexamplejava-예재)*  
+*p67. [Chapter 02 - VariableScopeExample.java 예재](#chapter-02---variablescopeexamplejava-예재)*  
+*p69. [Chapter 02 - PrintExample.java 예재](#chapter-02---printexamplejava-예재)*  
+*p71. [Chapter 02 - ScannerExample.java 예재](#chapter-02---scannerexamplejava-예재)*  
+
 ###
 ## 2. 실습내용 정리
 ### p15. Chapter 01 - Hello.java 예재
@@ -498,4 +510,301 @@ public class TextBlockExample {
 -----------------------------
 나는 자바를 학습합니다.
 나는 자바 고수가 될 겁니다.
+```
+### Chapter 02 - 2.7 자동 타입 변환
+기본 타입을 허용 범위 순으로 나열
+```text
+byte < short < char < int < long < float < double
+```
+
+### Chapter 02 - PromotionExample.java 예재
+```java
+package temp.src.ch02.sec07;
+
+public class PromotionExample {
+    public static void main(String[] args) {
+        byte byteValue = 10;
+        int intValue = byteValue;
+        System.out.println("intValue: " + intValue);
+
+        char charValue = '가';
+        intValue = charValue;
+        System.out.println("가의 유니코드: " + intValue);
+
+        intValue = 50;
+        long longValue = intValue;
+        System.out.println("longValue: " + longValue);
+
+        longValue = 100;
+        float floatValue = longValue;
+        System.out.println("floatValue: " + floatValue);
+
+        floatValue = 100.5F;
+        double doubleValue = floatValue;
+        System.out.println("doubleValue: " + doubleValue);
+    }
+}
+```
+```shell
+#실행결과
+intValue: 10
+가의 유니코드: 44032
+longValue: 50
+floatValue: 100.0
+doubleValue: 100.5
+```
+
+### Chapter 02 - CastingExample.java 예재
+```java
+package temp.src.ch02.sec08;
+
+public class CastingExample {
+    public static void main(String[] args) {
+        int var1 = 10;
+        byte var2 = (byte) var1;
+        System.out.println(var2);
+
+        long var3 = 300;
+        int var4 = (int) var3;
+        System.out.println(var4);
+
+        int var5 = 65;
+        char var6 = (char) var5;
+        System.out.println(var6);
+
+        double var7 = 3.14;
+        int var8 = (int) var7;
+        System.out.println(var8);
+    }
+}
+```
+```shell
+#실행결과
+10
+300
+A
+3
+```
+
+### Chapter 02 - OperationPromotionExample.java 예재
+```java
+package temp.src.ch02.sec09;
+
+public class OperationPromotionExample {
+    public static void main(String[] args) {
+        byte result1 = 10 + 20;
+        System.out.println("result1: " + result1);
+
+        byte v1 = 10;
+        byte v2 = 20;
+        int result2 = v1 + v2;
+        System.out.println("result2: " + result2);
+
+        byte v3 = 10;
+        int v4 = 100;
+        long v5 = 1000L;
+        long result3 = v3 + v4 + v5;
+        System.out.println("result3: " + result3);
+
+        char v6 = 'A';
+        char v7 = 1;
+        int result4 = v6 + v7;
+        System.out.println("result4: " + result4);
+        System.out.println("result4: " + (char)result4);
+
+        int v8 = 10;
+        int result5 = v8 / 4;
+        System.out.println("result5: " + result5);
+
+        int v9 = 10;
+        double result6 = v9 / 4.0;
+        System.out.println("result6: " + result6);
+
+        int v10 = 1;
+        int v11 = 2;
+        double result7 = (double) v10 / v11;
+        System.out.println("result7: " + result7);
+    }
+}
+```
+```shell
+#실행결과
+result1: 30
+result2: 30
+result3: 1110
+result4: 66
+result4: B
+result5: 2
+result6: 2.5
+result7: 0.5
+```
+
+### Chapter 02 - StringConcatExample.java 예재
+```java
+package temp.src.ch02.sec09;
+
+public class StringConcatExample {
+    public static void main(String[] args) {
+        int result1 = 10 + 2 + 8;
+        System.out.println("result1: " + result1);
+
+        String result2 = 10 + 2 + "8";
+        System.out.println("result2: " + result2);
+
+        String result3 = 10 + "2" + 8;
+        System.out.println("result3: " + result3);
+
+        String result4 = "10" + 2 + 8;
+        System.out.println("result4: " + result4);
+
+        String result5 = "10" + (2 + 8);
+        System.out.println("result5: " + result5);
+    }
+}
+```
+```shell
+#실행결과
+result1: 20
+result2: 128
+result3: 1028
+result4: 1028
+result5: 1010
+```
+
+### Chapter 02 - PrimitiveAndStringConversionExample.java 예재
+```java
+package temp.src.ch02.sec10;
+
+public class PrimitiveAndStringConversionExample {
+    public static void main(String[] args) {
+        int value1 = Integer.parseInt("10");
+        double value2 = Double.parseDouble("3.14");
+        boolean value3 = Boolean.parseBoolean("true");
+
+        System.out.println("value1: " + value1);
+        System.out.println("value2: " + value2);
+        System.out.println("value3: " + value3);
+
+        String str1 = String.valueOf(10);
+        String str2 = String.valueOf(3.14);
+        String str3 = String.valueOf(true);
+
+        System.out.println("str1: " + str1);
+        System.out.println("str2: " + str2);
+        System.out.println("str3: " + str3);
+    }
+}
+```
+```shell
+#실행결과
+value1: 10
+value2: 3.14
+value3: true
+str1: 10
+str2: 3.14
+str3: true
+```
+
+### Chapter 02 - VariableScopeExample.java 예재
+```java
+package temp.src.ch02.sec11;
+
+public class VariableScopeExample {
+    public static void main(String[] args) {
+        int v1 = 15;
+        if(v1>10) {
+            int v2 = v1 -10;
+        }
+        int v3 = v1 + v2 + 5;
+    }
+}
+```
+```shell
+#실행결과
+java: cannot find symbol
+  symbol:   variable v2
+  location: class temp.src.ch02.sec11.VariableScopeExample
+```
+
+### Chapter 02 - PrintExample.java 예재
+```java
+package temp.src.ch02.sec12;
+
+public class PrintExample {
+    public static void main(String[] args) {
+        int value = 123;
+        System.out.printf("상품의 가격:%d원\n", value);
+        System.out.printf("상품의 가격:%6d원\n", value);
+        System.out.printf("상품의 가격:%-6d원\n", value);
+        System.out.printf("상품의 가격:%06d원\n", value);
+
+        double area = 3.14159 * 10 * 10;
+        System.out.printf("반지름이 %d인 원의 넓이:%10.2f\n", 10, area);
+
+        String name = "홍길동";
+        String job = "도적";
+        System.out.printf("%6d | %-10s | %10s\n", 1, name, job);
+    }
+}
+```
+```shell
+#실행결과
+상품의 가격:123원
+상품의 가격:   123원
+상품의 가격:123   원
+상품의 가격:000123원
+반지름이 10인 원의 넓이:    314.16
+     1 | 홍길동        |         도적
+```
+
+### Chapter 02 - ScannerExample.java 예재
+```java
+package temp.src.ch02.sec13;
+
+import java.util.Scanner;
+
+public class ScannerExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("x 값 입력: ");
+        String strX = scanner.nextLine();
+        int x = Integer.parseInt(strX);
+
+        System.out.print("y 값 입력: ");
+        String strY = scanner.nextLine();
+        int y = Integer.parseInt(strY);
+
+        int result = x + y;
+        System.out.println("x + y: " + result);
+        System.out.println();
+
+        while(true) {
+            System.out.print("입력 문자열: ");
+            String data = scanner.nextLine();
+            if(data.equals("q")) {
+                break;
+            }
+            System.out.println("출력 문자열: " + data);
+            System.out.println();
+        }
+
+        System.out.println("종료");
+    }
+}
+```
+```shell
+#실행결과
+x 값 입력: 3
+y 값 입력: 5
+x + y: 8
+
+입력 문자열: Hello
+출력 문자열: Hello
+
+입력 문자열: 안녕하세요
+출력 문자열: 안녕하세요
+
+입력 문자열: q
+종료
 ```
