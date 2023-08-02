@@ -514,7 +514,7 @@ public class TextBlockExample {
 ### Chapter 02 - 2.7 자동 타입 변환
 기본 타입을 허용 범위 순으로 나열
 ```text
-byte < short < char < int < long < float < double
+byte < short, char < int < long < float < double
 ```
 
 ### Chapter 02 - PromotionExample.java 예재
