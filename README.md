@@ -6,4 +6,5 @@
 ### *[Chapter 04 조건문과 반복문](temp/src/ch04/ch04.md)*  
 ### *[Chapter 05 참조 타입](temp/src/ch05/ch05.md)*
 ### *[Chapter 06 클래스](temp/src/ch06/ch06.md)*
-### *[Chapter 07 상속](temp/src/ch07/ch07.md)*  
+### *[Chapter 07 상속](temp/src/ch07/ch07.md)* 
+### *[Chapter 08 인터페이스](temp/src/ch08/ch08.md)* 
