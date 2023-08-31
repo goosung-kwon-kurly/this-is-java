@@ -26,7 +26,7 @@ public interface Service {
         staticCommon();
     }
 
-    static void staticCommon() {
+    private static void staticCommon() {
         System.out.println("staticMethod 중복 코드C");
         System.out.println("staticMethod 중복 코드D");
     }
